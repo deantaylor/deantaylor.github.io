@@ -43,6 +43,18 @@
   <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
 
+   <script>
+  var container = document.querySelector('#container');
+  var msnry = new Masonry( container, {
+  // options
+  itemSelector: '.item',
+  transitionDuration: 0  
+});
+  imagesLoaded( container, function() {
+  msnry.layout();
+});
+</script>
+
 
 
   <!-- Favicon
@@ -118,14 +130,4 @@
 </body>
 </html>
 
-  <script>
-  var container = document.querySelector('#container');
-  var msnry = new Masonry( container, {
-  // options
-  itemSelector: '.item',
-  transitionDuration: 0  
-});
-  imagesLoaded( container, function() {
-  msnry.layout();
-});
-</script>
+ 
