@@ -3,151 +3,114 @@
 <head>
 
   <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Dean Taylor Design / eastlab.</title>
-  <meta name="description" content="human, designer and creative technologist">
-  <meta name="author" content="Dean Taylor">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Dean Taylor Design</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
   <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://use.typekit.net/zkj5ozm.css">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/stylesheet.css">
-
-    <!-- ANALYTICS 
-  -->
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59235599-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-  <!-- JS -->
- 
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-
-
-
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
   <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-</head>
-<body>
+  </head>
+  <body>
 
   <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
 
-  <div class="container">
-    <div id="header" class="row">
-      <div class="seven columns">
-        <a href="/"><h3>DEAN TAYLOR</h3></a>
+      <!-- Header -->
+      <div class="row">
+        <div class="header">
+          <div class="twelve columns">
+            <div class="one-third column center remove">
+              <a id="tag" href ="/work.html"><</a><a id="tag"> octavius</a>
+            </div>
+            <div class="one-third column" id ="logo">
+              <h1><a href="/index.html">DEAN TAYLOR</a></h1>
+            </div>
+            <div class="one-third column center" id="nav">
+              <ul >
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/work.html">work</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="five columns">
-       <ul>
-        <li><a href="/about">about</a></li>
-        <li><a href="/work">work</a></li>
-      </ul>
+      <!-- END HEADER -->
+      <!-- Main Body -->
+      <div class="main-img row">
+        <div class="twelve columns">
+          <img src="images/octavius.jpg">
+        </div>
+      </div>
+      <div class="project row">
+        <div class="twelve columns">
+         <h2>OCTAVIUS</h2>
+         <h3 class="grey">Musical performance platform</h3>
+         
+         <p>05/16 | concept | product | development </p>
+
+
+         <p>Check out Oliver Stirling perform with OCTAVIUS <a href="https://vimeo.com/165364623">here</a>.</p>
+
+         <p>OCTAVIUS uses new technology to explore basic interactions. My goal was to create an open, non-restricted experience with sound. It uses basic interactions that musicians are familiar with to offer a different, expressive evaluation of the sounds they create.</p>
+         <img src="images/octavius_film.jpg" alt="">
+
+         <p>Using mesh networking and sensors, the system creates a wireless and tangible experience. Each of the eight blocks can be rotated independently to manipulate effects and parameters using the MIDI and OSC protocols. They uses orientation to modulate parameters, whilst each pad can trigger sounds or events.</p>
+
+         <img src="images/octavius_pcb2.jpg" alt="">
+         <p>
+          Each element of this project was developed and refined in a Maker Space utilising any and all technology to achieve completion. Each part is customised using PCB etching, moulding, 3d printing, coding and software / UI development.
+        Each block can communicate around 10m from the each other, giving a total 100m² playing space. This offers collaborative experiences.</p>
+
+        <p>Using software built in MAX, OCTAVIUS can change different instruments seamlessly on the fly. With assignable orientation parameters for each device. The platform speaks OSC and MIDI, and can be connected to most software and hardware devices.</p>
+
+        <img src="images/pages.png" alt="">
+        <p>PAGES for OCTAVIUS acts as a daemon-type middle man software, dealing with data and routing.
+        </p>
+
+
+      </div>
     </div>
+
+    </div>
+    <!-- Main Body End -->
+
+    <!-- Footer -->
+    <div class="row">
+      <div id="footer" class="twelve columns">
+
+        <h5 id="footer-space">human centered design and technology</h5>
+
+      </div>
+    </div>
+
+
+
+
+    <!-- Footer End -->
+
+
   </div>
 
-<div class="direct row twelve columns">
 
-	<p class=" alt">PROJECTS / OCTAVIUS</p>
-</div>
-
-<div class="row">
-	<div class="twelve columns">
-
-		<img src="/images/oc1.jpg" alt="">
-		<div class="dot"></div>
-	</div>
-
-</div>
-
-<div class="row">
-
-  </div>
-
- 
-	<div class="eight columns offset-by-two">
-
-		<h5>WHAT?</h5>
-		<iframe src="https://player.vimeo.com/video/165364623" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-		<p><br>A tangible performance platform for electronic music. Using basic interaction to compose, perform and manipulate sound.
-		<p> Each device is wireless and uses its orientation to manipulate parameters whilst each pad can trigger sounds or events.</p>
-				<p> OCTAVIUS explores basic interactions and new technology to offer a different kind of experience with sound. It uses basic interactions that musicians are familiar with to offer a different, expressive experience. </p>
-
-		<h5>TECH SPEC</h5>
-				<p>OCTAVIUS uses mesh networking and sensors to offer up a wireless and tangible experience. Each of the eight blocks can be rotated independently to manipulate effects and parameters using the MIDI and OSC protocols.</p>
-
-				<h5>SOFTWARE</h5>
-				<img src="/images/pages_view.png" alt="">
-				<p> Using software built in MAX, OCTAVIUS can change different instruments seamlessly on the fly. With assignable orientation parameters for each device. Works with both hardware and software.</p><p>More applications for OCTAVIUS coming soon.</p>
-
-
-		<img src="/images/OC_img2.jpg" alt="">
-			<p> Check out the performance by Oliver Stirling, using OCTAVIUS.</p>
-
-	
-			
-
-
-<img src="/images/OC_img1.jpg" alt="">
-
-						
-
-			<h5><br>DEVELOPMENT AND PROCESS</h5>
-
-			<p>For a thorough insight into the process and development of OCTAVIUS, please look at my blog <a href="/words">here</a>.</p>
-			<img src="/images/OC_img3.jpg" alt="">
-			<img src="/images/OC_img4.jpg" alt="">
-			<img src="/images/OC_img5.jpg" alt="">
-			<img src="/images/OC_img6.jpg" alt="">
-			<img src="/images/OC_img7.jpg" alt="">
-			<img src="/images/OC_img8.jpg" alt="">
-			<img src="/images/OC_img9.jpg" alt="">
-
-							</div>
-							<div class="two columns"></div>
-						</div>
-
-<div class="row">
- </div>
- <div class="footer">
-  <div class="twelve columns"><p class="left">Content © Dean Taylor 2020 </p>
-        <ul id="social" class="right">
-
-        <li><a href="http://www.twitter.com/dean__" target="_blank"><img class="s-icon" src="images/twit.png" alt=""></a></li>
-        <li><a href="http://www.facebook.com/deandundee" target="_blank"><img class="s-icon" src="images/fb.png" alt=""></a></li>
-        <li><a href="http://www.vimeo.com/deantaylordesign" target="_blank"><img class="s-icon" src="images/vim.png" alt=""></a></li>
-        <li><a href="http://uk.linkedin.com/in/deantaylordesign" target="_blank"><img class="s-icon" src="images/in.png" alt=""></a></li>
-
-      </ul>
-
-  </div>
-</div>
-</div>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-
- 
