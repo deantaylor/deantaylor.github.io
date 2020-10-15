@@ -1,0 +1,48 @@
+inl()	// Hack for IE7 included
+	display inline-block
+	*display inline
+	zoom 1
+
+// Pozicování
+relative(t = 0,r = 0,b = 0,l = 0)
+	position relative
+	top t
+	right r
+	bottom b
+	left l
+absolute(t = 0,r = 0,b = 0,l = 0)
+	position absolute
+	top t
+	right r
+	bottom b
+	left l
+fixed(t = 0,r = 0,b = 0,l = 0)
+	position fixed
+	top t
+	right r
+	bottom b
+	left l
+
+// Kulaté rohy
+round(tl = 4px, tr = tl, bl = tl, br = tl)
+	border-top-left-radius tl
+	border-top-right-radius tr
+	border-bottom-left-radius bl
+	border-bottom-right-radius br
+	-webkit-border-top-left-radius tl
+	-webkit-border-top-right-radius tr
+	-webkit-border-bottom-left-radius bl
+	-webkit-border-bottom-right-radius br
+
+
+// Vrací bílou/černou tak aby byla kontrastní vůči barvě
+get_contrast(bg_color)
+	if (red(bg_color)*299 + green(bg_color)*587 + blue(bg_color)*114)/1000 >= 128
+		return black
+	else
+		return white
+
+// Vrací barvu zesvětlenou tak, aby byla změna poznat
+get_hover(bg_color)
+	darkness = 255 - (red(bg_color)+green(bg_color)+blue(bg_color))/3
+	return lighten(bg_color, darkness/10)
