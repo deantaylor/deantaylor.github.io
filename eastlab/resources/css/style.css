@@ -1,0 +1,683 @@
+/*---------------------------*/
+/* BASIC SETUP */
+/*---------------------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    background-color: #fff;
+    color: #343434;
+    font-family: 'Roboto mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+/*---------------------------*/
+/* REUSABLES */
+/*---------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 100%;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+
+}
+
+
+section {
+    height: auto;
+    padding: 80px 0 160px 0;
+    clear: both;
+}
+
+section:last-child {
+    padding-bottom: 250px;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.mob {
+    display: none;
+}
+
+ion-icon {
+    font-size: 28px;
+    color: #1b1b1b;
+}
+
+/*---------------------------*/
+/* HEADER */
+/*---------------------------*/
+
+header {
+    background: #1b1b1b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(img/nite_jogger.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.banner,
+    {
+    width: 33.3%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+nav p,
+a {
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.nav p,
+.nav ul {
+    padding-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+
+.logo {
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.logo img {
+    padding-top: 20px;
+}
+
+
+.flex {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.center-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 150%;
+
+
+}
+
+.body-text-box {
+    display: flex;
+    align-items: center;
+}
+
+.body-text-box h1 {
+    margin-top: 160px;
+}
+
+/*---------------------------*/
+/* HEADINGS */
+/*---------------------------*/
+
+
+h1 {
+    font-size: 240%;
+    color: #fff;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 240%;
+    font-weight: 400;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    text-align: center;
+    color: #fff;
+    opacity: 90%;
+    width: 36px;
+    height: 36px;
+    transition: bottom 0.4s;
+}
+
+.scroll-down:hover {
+    bottom: 30px;
+    transition: bottom 0.4s;
+
+}
+
+.text-title {
+    display: block;
+    font-weight: 500;
+
+}
+
+.banner-top {
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 80px;
+    width: 100%;
+}
+
+.body-text {
+    width: 66%;
+    margin: 80px auto 0 auto;
+}
+
+.body-text h2 {
+
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+
+
+.section-work {
+    padding: 80px 0 80px 0;
+    color: #fff;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    background-color: #000;
+}
+
+.img-container:first-child {
+    float: left;
+}
+
+.img-container:second-child {
+    float: right;
+}
+
+.img-container img {
+    opacity: 0.7;
+    width: 100%;
+    height: 433px;
+}
+
+
+.img-container p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-text {
+    transition: opacity 0.4s;
+
+}
+
+.section-work {
+    display: none;
+}
+
+.section-what {
+
+    color: #fff;
+    background-color: #1b1b1b;
+}
+
+.section-what h2 {
+    color: #fff;
+}
+
+.section-what p {
+    margin-bottom: 80px;
+}
+
+/*---------------------------*/
+/* ANIMATIONS */
+/*---------------------------*/
+
+
+@keyframes fadeIn {
+    from: {
+        opacity: 0;
+    }
+
+    to: {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opFade {
+    from {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/nite_jogger.jpg);
+    }
+
+    to {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nite_jogger.jpg);
+    }
+
+}
+
+@-webkit-keyframes opFade {
+    from {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/nite_jogger.jpg);
+    }
+
+    to {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/nite_jogger.jpg);
+    }
+}
+
+.fade {
+    animation: fadeIn 2s;
+    -webkit-animation: fadein 2s;
+}
+
+
+/*---------------------------*/
+/* GENERAL STYLING */
+/*---------------------------*/
+
+body {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+
+}
+
+
+/*---------------------------*/
+/* CONTACT */
+/*---------------------------*/
+
+.section-contact {}
+
+.btn {
+    background-color: #05F29B;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 8px 8px 8px;
+
+}
+
+.section-contact .span-1-of-2 p {
+    margin-bottom: 40px;
+}
+
+.section-contact .span-1-of-2:first-child p:before {
+
+    display: block;
+    height: 2px;
+    background-color: #1b1b1b;
+    content: ' ';
+    width: 128px;
+    margin-bottom: 40px;
+    border-radius: 2px;
+
+}
+
+
+
+.section-contact .span-1-of-2:nth-child(2) p {
+    margin-top: 42px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------*/
+/* FOOTER */
+/*---------------------------*/
+
+.footer:before {
+
+    display: block;
+    height: 2px;
+    background-color: #1b1b1b;
+    content: " ";
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.section-contact {
+    height: auto;
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+
+.footer .span-1-of-2:nth-child(2) {
+    text-align: right;
+}
+
+
+
+.nav li a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #05F29B;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+
+}
+
+
+/* WHAT IMAGE SHOWCASE */
+
+
+.img-wrapper img {
+    opacity: 0.9;
+    display: block;
+    max-height: 135px;
+    width: 100%;
+    filter: grayscale(100%);
+    margin-bottom: 40px;
+}
+
+.inner-row {
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second {
+    height: auto;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 140px;
+    margin: 0;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    height: 100%;
+    width: auto;
+}
+
+.second .body-text {
+
+    margin-bottom: 40px;
+}
+
+.img-show p {
+    transition: opacity 0.2s;
+    opacity: 0;
+    font-weight: 300;
+    border-left: 2px solid #fff;
+    padding: 0 0 0 16px;
+
+}
+
+
+.img-show:hover p {
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+
+.img-show:hover img {
+    filter: none;
+    transition: filter 0.2s;
+}
+
+
+.body-text {
+    display: flex;
+    align-items: center;
+}
+
+/* EXPERIMENTAL */
+
+
+.second {
+    background: #1b1b1b;
+    background-image: linear-gradient(rgba(5, 242, 155, 0.8), rgba(5, 242, 155, 0.8)), url(img/adidas_led.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    overflow: hidden;
+    filter: grayscale(0.5);
+}
+
+.test {
+    display: none;
+}
+
+
+
+
+.quads-inner {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    width: 100%
+}
+
+.quads-text {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.quads-text h4 {
+    margin-bottom: 20px;
+}
+
+.quads {
+    overflow: hidden;
+}
+
+.quads-inner {
+
+    background: #000;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+
+}
+
+.quads-inner:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    transition: transform 1s;
+
+}
+
+.quads:first-child .quads-inner {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/cycles.png);
+
+}
+
+.quads:nth-child(2) .quads-inner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/octavius_film.jpg);
+
+
+}
+
+.quads:nth-child(3) .quads-inner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/supercourt.jpg);
+
+}
+
+
+.menu-icon {
+    color: #fff;
+    float: right;
+    height: 32px;
+    width: 32px;
+
+}
+
+.menu {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+
+}
+
+
+.social-icons a {
+    display: inline-block;
+}
+
+
+.section-coming-soon {
+    height: 100vh;
+    background: #1b1b1b;
+}
+
+
+/*  CUSTOM
+============================================================================= */
+
+@media only screen and (max-width: 880px) {
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section-what .row:nth-child(2) {
+        width: 100%;
+    }
+
+    .body-text {
+        width: 100%;
+    }
+
+    .body-text h2 {
+        line-height: 42px;
+        font-size: 160%;
+    }
+
+    p {
+        font-size: 80%;
+    }
+
+    section {
+        padding: 80px 0 80px 0;
+    }
+
+    .banner-top,
+    footer .col {
+        text-align: center;
+    }
+
+    .footer:before {
+        width: 80%;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+
+    .banner,
+    nav ul {
+        display: none;
+    }
+
+    .inner-row {
+        width: 100%;
+    }
+
+    .quads {
+        margin-bottom: 40px;
+    }
+
+    .quads-inner {
+        height: 20VH;
+    }
+
+    /* NAV MOBILE */
+
+    nav {
+        position: relative;
+    }
+
+    .logo img {
+        padding-top: 16px;
+    }
+
+    .social-icons {}
+
+
+}
