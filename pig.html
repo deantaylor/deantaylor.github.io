@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Image Generator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="app.js"></script>
+</head>
+<body>
+    <div id="container">
+  <h1>Product Image Generator (PIG) v1</h1>
+  <div id="upload-container">
+    <div id="background-upload">
+      <h4>Upload Background Image</h4>
+      <input type="file" id="background-file" onchange="previewBackground()">
+   <!--   <div id="background-preview"></div> -->
+      <label for="background-scale">Background Scale:</label>
+      <input type="range" min="0" max="100" value="100" id="background-scale" oninput="updatePreview()">
+        <label for="background-rotation">Background Rotation:</label>
+  <input type="range" min="0" max="360" value="0" id="background-rotation" oninput="updatePreview()">
+
+    </div>
+    <div id="foreground-upload">
+      <h4>Upload Foreground Image</h4>
+      <input type="file" id="foreground-file" onchange="previewForeground()">
+     <!-- <div id="foreground-preview"></div> -->
+      <label for="foreground-scale">Foreground Scale:</label>
+      <input type="range" min="0" max="100" value="100" id="foreground-scale" oninput="updatePreview()">
+        <label for="foreground-rotation">Background Rotation:</label>
+  <input type="range" min="0" max="360" value="0" id="foreground-rotation" oninput="updatePreview()">
+    </div>
+  </div>
+  <div id="canvas-container">
+    <label for="canvas-width">Canvas W :</label>
+    <input type="number" id="canvas-width" value="400" onchange="updateCanvas()">
+    <label for="canvas-height">Canvas H :</label>
+    <input type="number" id="canvas-height" value="400" onchange="updateCanvas()"><br><br>
+    <button onclick="updateCanvas()">Generate Tile</button><br><br>
+        <h4>Preview</h4>
+      <canvas id="composite-canvas"></canvas>
+<br><br>
+
+<button onclick="downloadImage()">Download</button>
+
+</div>
+  </div>
+</body>
+</html>
