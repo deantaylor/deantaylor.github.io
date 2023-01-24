@@ -1,0 +1,46 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+
+form label {
+    margin-right: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+select {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+	width: 400px;
+}
+
+#result-image {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+#download-button {
+    margin: 20px auto;
+
+}
+
+
+
+#background-size, #foreground-size{
+    width: 33%;
+}
+
+#container {
+margin: 20px;}
